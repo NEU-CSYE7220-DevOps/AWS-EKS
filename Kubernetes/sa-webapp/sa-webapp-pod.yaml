@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sa-web-app
+  labels:
+    app: sa-web-app
+spec:
+  containers:
+    - image: 781857/sentiment-analysis-web-app
+      name: sa-web-app
+      ports:
+        - containerPort: 80
